@@ -1,5 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const data = require("./data")
 
 const server = express();
 
@@ -12,9 +13,7 @@ nunjucks.configure("views", {
 });
 
 server.get("/", function(req, res) {
-   
-   return res.send("TA UP VACILÂO")
-   //return res.render("index")
+   return res.render("index", {items: data})
 });
 
 server.listen(5000, function() {

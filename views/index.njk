@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+{% block content%}
+
+<div id="description">
+  <h1>As melhores receitas</h1>
+  <img src="chef.png" id="chef"/>
+  <p>Aprenda a construir os melhores pratos
+com receitas criadas por profissionais
+do mundo inteiro.</p>
+</div>
+<h2> Mais acessadas </h2>
+<section id="most_accessed">
+  {% for item in items %}
+  <div id="card">
+    <div class="card_image">
+      <img src="{{item.img}}" alt="Imagem de {{item.title}}"/>
+    </div>
+    <div class="recipe_title">
+      <p>{{item.title}}</p>
+    </div>
+    <div class="by_who">{{item.by}}</div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock%}

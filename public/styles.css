@@ -1,0 +1,102 @@
+/* === HOME === */
+/* === RECIPES === */
+/* === ABOUT === */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+header div {
+  display: flex;
+  padding: 0px 122.4px 0px 231px;
+}
+header div a {
+  padding: 38px 0px 36px 0px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 19px;
+  text-decoration: none;
+}
+#logo {
+  padding-top: 36.1px;
+  margin-right: 122.4px
+}
+
+#description {
+  margin-left: 231px;
+  position: relative;
+  height: 366px;
+  width: 940px;
+  border-radius: 30px;
+  background: #FBDFDB;
+}
+
+div h1 {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 117px 575px 220px 60px;
+}
+div p {
+  margin: 165px 0px 0px 60px;
+  width: 316px;
+  height: 84px;
+  position: absolute;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 28px;
+  font-weight: 600;
+  opacity: 70%;
+}
+img#chef{
+  display: block;
+  position: absolute;
+  margin: 66px 0px 0px 560px;
+  align-items: bottom;
+}
+
+h2 {
+  margin: 50px 0px 20px 230px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#most_accessed {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 230px;
+}
+#card {
+}
+.card_image img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+  margin: 40px 0px 0px 0px;
+}
+
+.recipe_title p {
+  margin: 20px 0px 5px 20px;
+  opacity: 100%
+}
+
+.by_who {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #777777;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 22px
+}
+
+/* === HOME === */
