@@ -203,3 +203,13 @@ h6 {
   height: 112px;
   margin: 60px 230px 112px 100px
 }
+
+
+#recipesCards {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 230px;
+}
