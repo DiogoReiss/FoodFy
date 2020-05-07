@@ -2,6 +2,18 @@
 
 {% block content%}
 
-
+<section id="recipes">
+  {% for item in items %}
+  <div id="card">
+    <div class="card_image">
+      <img src="{{item.img}}" alt="Imagem de {{item.title}}"/>
+    </div>
+    <div class="recipe_title">
+      <p>{{item.title}}</p>
+    </div>
+    <div class="by_who">{{item.by}}</div>
+  </div>
+  {% endfor %}
+</section>
 
 {% endblock%}

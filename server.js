@@ -16,6 +16,13 @@ server.get("/", function(req, res) {
    return res.render("index", {items: data})
 });
 
+server.get("/about", function(req, res) {
+   return res.render("about")
+})
+
+server.get("/recipes", function(req, res) {
+   return res.render("recipes", {items: data})
+})
 server.listen(5000, function() {
    console.log("O mundo gira e o server roda vacilão!")
 });

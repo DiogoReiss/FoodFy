@@ -4,7 +4,7 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
 }
 header div {
   display: flex;
@@ -74,7 +74,53 @@ h2 {
   font-family: 'Roboto', sans-serif;
   margin-left: 230px;
 }
-#card {
+.card_image img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+  margin: 40px 0px 0px 0px;
+}
+
+.recipe_title p {
+  margin: 20px 0px 5px 20px;
+  opacity: 100%
+}
+
+.by_who {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #777777;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 22px
+}
+
+#Copyright {
+  display: inline-block;
+  position: relative;
+  background: #EEEEEE;
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 10px 567px 10px 566px;
+  margin-bottom: 0;
+  margin-top: 600px;
+}
+
+/* === HOME === */
+
+/* === RECIPES === */
+
+#recipes {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 230px;
 }
 .card_image img {
   width: 300px;
@@ -97,4 +143,63 @@ h2 {
   margin-left: 22px
 }
 
-/* === HOME === */
+/* === ABOUT === */
+
+h3 {
+  color: #111111;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 10px 100px 30px 200px;
+}
+
+h4 {
+  color: #444444d7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  width: 940px;
+  margin: 10px 100px 30px 200px;
+}
+
+h5 {
+  color: #111111;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 100px 10px 200px;
+
+}
+
+h6 {
+  color: #444444d7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  width: 940px;
+  margin: 20px 100px 10px 200px;
+}
+
+#recipes {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  color: #111111;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  margin: 10px 100px 20px 100px;
+}
+
+#recipesP {
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  width: 940px;
+  height: 112px;
+  margin: 60px 230px 112px 100px
+}
