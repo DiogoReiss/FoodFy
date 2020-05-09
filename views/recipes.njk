@@ -4,16 +4,35 @@
 
 <section id="recipesCards">
   {% for item in items %}
-  <div id="card">
+  <div class="cardRecipe" id="{{item.img}}">
     <div class="card_image">
       <img src="{{item.img}}" alt="Imagem de {{item.title}}"/>
     </div>
-    <div class="recipe_title">
+    <div class="recipe_title" id="{{item.title}}">
       <p>{{item.title}}</p>
     </div>
-    <div class="by_who">{{item.by}}</div>
+    <div class="by_who" id="{{item.by}}">{{item.by}}</div>
   </div>
   {% endfor %}
 </section>
 
-{% endblock%}
+<div class="modalOverlay">
+  <div id="modal">
+    <a id="closeModal">Fechar modal</a>
+
+    <div id="modalContent">
+      <div class="recipeImage">
+        <img class="recipe_image" src="{{item.img}}" alt="Imagem de {{item.title}}"/>
+      </div>
+      <div class="recipeTitle">
+      </div>
+      <div class="recipebyWho">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js">
+</script>
+
+{% endblock %}

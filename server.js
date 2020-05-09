@@ -1,7 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const data = require("./data")
-
+const data = require("./data");
 const server = express();
 
 server.use(express.static('public'));
